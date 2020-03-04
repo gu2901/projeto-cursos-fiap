@@ -1,9 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Caladea:400,700,700i|Lato|Oxanium:400,500,600,700|Spartan&display=swap');
 
+body{
+    display: grid;
+    grid-gap: 15px 10px;
+      grid-template-areas: 
+      "header header header" 
+      "nav main main"
+      "nav main main"
+      "nav main main"
+      "footer footer footer";
+      background-color: #2196F3;
+}
 
-.body{
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25%
+
+header{
+grid-area: header;
+background-color: blue;
+}
+
+main{
+grid-area: main;
+background-color: orange;
+}
+
+nav{
+grid-area: nav;
+background-color: red;
+}
+
+footer{
+grid-area: footer;
+background-color: pink;
 }
 
 .botoes{
