@@ -1,0 +1,42 @@
+.botoes{
+display: flex;
+justify-content: center;
+height: 50px;
+align-items: stretch;
+}
+
+.anterior{
+    border-width: 2px;
+background-color: blue;
+}
+.inicial{
+    border-width: 2px;
+  
+}
+.proximo{
+    border-width: 2px;
+    box-shadow: 0 0 10px 1px rgb(200,180,255);
+}
+
+.gradeCursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso{
+    padding: 10px;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 5px 2px rgb(200,180,255);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageCabecalho{
+width: 100%;
+height: 400px;
+}
