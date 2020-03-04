@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Caladea:400,700,700i|Lato|Oxanium:400,500,600,700|Spartan&display=swap');
 
+
+.body{
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25%
+}
+
 .botoes{
 display: flex;
 justify-content: center;
