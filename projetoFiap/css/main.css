@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Caladea:400,700,700i|Lato|Oxanium:400,500,600,700|Spartan&display=swap');
+
+body{
+    display: grid;
+    grid-gap: 15px 10px;
+      grid-template-areas: 
+      "header header header header header header header" 
+      "nav main main main main main main"
+      "nav main main main main main main"
+      "nav main main main main main main"
+      "footer footer footer footer footer footer footer";
+      
+}
+
+
+header{
+grid-area: header;
+background-color: #424242;
+
+}
+
+header div h1{
+align-self: center;
+transition: 2s;
+}
+header div h1:hover{
+    animation-name: example;
+    animation-duration: 4s;
+    transform: scale(1,2)
+}
+
+
+
+@keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
+
+
+header div{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+header :nth-child(2){
+flex-grow: 4;
+}
+
+
+main{
+grid-area: main;
+}
+
+.text{
+color: aquamarine;
+font-family:  Geneva, Verdana, sans-serif;
+}
+
+
+
+nav{
+    grid-area: nav;
+    width: 30%;
+    background-color: #dc143c;
+    display:flex;
+    flex-direction: column;
+}
+
+nav:hover{
+    width: 100%;
+}
+
+nav a{
+    visibility: hidden; 
+}
+
+nav:hover a{
+    visibility: visible;
+}
+nav:hover .toggleNav h2{
+    display: contents;
+}
+
+
+nav .toggleNav h2{
+    display: none;
+}
+
+nav a{
+    margin: 4px;
+    padding: 2px;
+    color: whitesmoke;
+    font-size: 1.2em;
+    text-decoration: none;   
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: #424242;
+}
+
+
+.toggleNav{
+display: flex;
+justify-content: space-between;
+align-self: center;
+}
+
+.toggleNav h2{
+    visibility: hidden;
+}
+.toggleButton h2{
+    visibility: visible;
+    float: left;
+}
+nav:hover h2{
+    visibility: visible;
+}
+nav:hover .toggleButton h3{
+    visibility: hidden;
+}
+
+
+
+
+footer{
+grid-area: footer;
+background-color: pink;
+}
+
+.botoes{
+display: flex;
+height: 50px;
+justify-content: space-around;
+align-items: center;
+}
+
+.botoes a{
+    border: 1px solid;
+
+}
+
+
+.anterior{
+    border-width: 2px;
+}
+.inicial{
+    border-width: 2px;
+  
+}
+.proximo{
+    border-width: 2px;
+    box-shadow: 0 0 10px 1px rgb(200,180,255);
+}
+
+.gradeCursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso{
+    padding: 10px;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 5px 2px rgb(200,180,255);
+    transition: width 1s, height 1s;
+}
+
+.curso:hover{
+ background-color: aqua;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageCabecalho{
+width: 100%;
+height: 400px;
+}

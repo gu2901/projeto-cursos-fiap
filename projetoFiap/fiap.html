@@ -6,16 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fiap - Website</title>
 </head>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 <body> 
 <header>
-        <h1>
-            FIAP. O NOVO É AQUI.
-        </h1>
-        <p>A FIAP é o centro de excelência em tecnologia mais respeitado do país. Uma história que vem sendo construída dia
-        após dia, estimulando mentes a vivenciarem a inovação e o empreendedorismo. Porque a FIAP acredita no poder
-        transformador da tecnologia. Um poder que, aliado à criatividade, inventa, muda, inquieta. Faz as pessoas buscarem
-        soluções que nunca foram pensadas. Tudo isso para construir um mundo melhor.</p> 
+    <div class="headerEsquerda">
+
+        <div class="logo">
+             <img src="./images-fiap/logoFiap.jpg" alt="logo Fiap" title="logo Fiap">
+        </div>
+        <div>
+            <h1>
+                FIAP. O NOVO É AQUI.
+            </h1>
+        </div>
+    </div>
+
+        <div class="text">
+            <p>A FIAP é o centro de excelência em tecnologia mais respeitado do país. Uma história que vem sendo construída dia
+            após dia, estimulando mentes a vivenciarem a inovação e o empreendedorismo. Porque a FIAP acredita no poder
+            transformador da tecnologia. Um poder que, aliado à criatividade, inventa, muda, inquieta. Faz as pessoas buscarem
+            soluções que nunca foram pensadas. Tudo isso para construir um mundo melhor.</p> 
+        </div>
 </header>
 
 <main>
@@ -72,10 +83,18 @@
     </div>
 </main>
     
-<nav style="display:flex;flex-direction: column;">
-       <h2>
-        Navegação Vertical
-       </h2>
+<nav>
+    <div class="toggleNav">
+        <h2>
+            Navegação Vertical
+        </h2>
+       <div class="toggleButton">
+         <h3>
+              |||| 
+         </h3>
+       </div>
+    </div>
+       
     <a href="./cursos/adiministracao.html">Administração</a>
     <a href="#">Análise e Desenvolvimento de sistemas</a>
     <a href="#">Engenharia da Computação</a>
